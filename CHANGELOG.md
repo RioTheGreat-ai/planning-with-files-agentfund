@@ -2,6 +2,48 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] - 2026-01-17
+
+### Added
+
+- **Session Recovery Feature**
+  - Automatically detect and recover unsynced work from previous sessions after `/clear`
+  - New `scripts/session-catchup.py` analyzes previous session JSONL files
+  - Finds last planning file update and extracts conversation that happened after
+  - Recovery triggered automatically when invoking `/planning-with-files`
+
+- **PreToolUse Hook Enhancement**
+  - Now triggers on Read/Glob/Grep in addition to Write/Edit/Bash
+  - Keeps task_plan.md in attention during research/exploration phases
+
+### Changed
+
+- Version bumped to 2.2.0
+- SKILL.md restructured with session recovery as first instruction
+- SKILL.md trimmed to ~100 lines (moved detailed docs to reference.md)
+- Description updated to mention session recovery feature
+
+### Optimal Workflow
+
+1. Disable auto-compact in Claude Code settings
+2. Start fresh session
+3. Run `/planning-with-files` when ready for complex task
+4. Work until context fills up
+5. Run `/clear`
+6. Run `/planning-with-files` again — automatically recovers where you left off
+
+### How Recovery Works
+
+When you invoke `/planning-with-files`:
+1. Skill instructions tell Claude to first run `session-catchup.py`
+2. Script checks `~/.claude/projects/` for previous session JSONL
+3. Finds last planning file update in that session
+4. Extracts conversation that happened after (potentially lost context)
+5. Claude updates planning files based on catchup + git diff
+6. Work continues seamlessly
+
+---
+
 ## [2.1.2] - 2026-01-11
 
 ### Fixed
