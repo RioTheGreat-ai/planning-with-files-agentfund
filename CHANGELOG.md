@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.3.0] - 2026-01-17
+
+### Added
+
+- **Codex IDE Support**
+  - Created `.codex/INSTALL.md` with installation instructions
+  - Skills install to `~/.codex/skills/planning-with-files/`
+  - Works with obra/superpowers or standalone
+  - Added `docs/codex.md` for user documentation
+  - Based on analysis of obra/superpowers Codex implementation
+
+- **OpenCode IDE Support** (Issue #27)
+  - Created `.opencode/INSTALL.md` with installation instructions
+  - Global installation: `~/.config/opencode/skills/planning-with-files/`
+  - Project installation: `.opencode/skills/planning-with-files/`
+  - Works with obra/superpowers plugin or standalone
+  - oh-my-opencode compatibility documented
+  - Added `docs/opencode.md` for user documentation
+  - Based on analysis of obra/superpowers OpenCode plugin
+
+### Changed
+
+- Updated README.md with Supported IDEs table
+- Updated README.md file structure diagram
+- Updated docs/installation.md with Codex and OpenCode sections
+- Version bump to 2.3.0
+
+### Documentation
+
+- Added Codex and OpenCode to IDE support table in README
+- Created comprehensive installation guides for both IDEs
+- Documented skill priority system for OpenCode
+- Documented integration with superpowers ecosystem
+
+### Research
+
+This implementation is based on real analysis of:
+- [obra/superpowers](https://github.com/obra/superpowers) repository
+- Codex skill system and CLI architecture
+- OpenCode plugin system and skill resolution
+- Skill priority and override mechanisms
+
+### Thanks
+
+- @Realtyxxx for feedback on Issue #27 about OpenCode support
+- obra for the superpowers reference implementation
+
+---
+
 ## [2.2.2] - 2026-01-17
 
 ### Fixed
