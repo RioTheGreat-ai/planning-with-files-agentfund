@@ -19,7 +19,8 @@ A Claude Code plugin that transforms your workflow to use persistent markdown fi
 [![Kilocode Skills](https://img.shields.io/badge/Kilocode-Skills-orange)](https://kilo.ai/docs/agent-behavior/skills)
 [![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-Skills-4285F4)](https://geminicli.com/docs/cli/skills/)
 [![Clawd CLI](https://img.shields.io/badge/Clawd%20CLI-Skills-FF6B6B)](https://docs.clawd.bot/tools/skills)
-[![Version](https://img.shields.io/badge/version-2.9.0-brightgreen)](https://github.com/OthmanAdi/planning-with-files/releases)
+[![Kiro](https://img.shields.io/badge/Kiro-Steering-00D4AA)](https://kiro.dev/docs/cli/steering/)
+[![Version](https://img.shields.io/badge/version-2.10.0-brightgreen)](https://github.com/OthmanAdi/planning-with-files/releases)
 [![SkillCheck Validated](https://img.shields.io/badge/SkillCheck-Validated-4c1)](https://getskillcheck.com)
 
 ## Quick Install
@@ -56,6 +57,7 @@ See [docs/installation.md](docs/installation.md) for all installation methods.
 | Claude Code | ✅ Full Support | [Installation](docs/installation.md) | Plugin + SKILL.md |
 | Gemini CLI | ✅ Full Support | [Gemini Setup](docs/gemini.md) | Agent Skills |
 | Clawd CLI | ✅ Full Support | [Clawd Setup](docs/clawd.md) | Workspace/Local Skills |
+| Kiro | ✅ Full Support | [Kiro Setup](docs/kiro.md) | Steering Files |
 | Cursor | ✅ Full Support | [Cursor Setup](docs/cursor.md) | Skills |
 | Continue | ✅ Full Support | [Continue Setup](docs/continue.md) | Skills + Prompt files |
 | Kilocode | ✅ Full Support | [Kilocode Setup](docs/kilocode.md) | Skills |
@@ -76,6 +78,7 @@ See [docs/installation.md](docs/installation.md) for all installation methods.
 | [Troubleshooting](docs/troubleshooting.md) | Common issues and solutions |
 | [Gemini CLI Setup](docs/gemini.md) | Google Gemini CLI integration guide |
 | [Clawd CLI Setup](docs/clawd.md) | Clawd CLI integration guide |
+| [Kiro Setup](docs/kiro.md) | Kiro steering files integration |
 | [Cursor Setup](docs/cursor.md) | Cursor IDE-specific instructions |
 | [Continue Setup](docs/continue.md) | Continue integration guide (skills + slash prompt) |
 | [Windows Setup](docs/windows.md) | Windows-specific notes |
@@ -89,7 +92,8 @@ See [docs/installation.md](docs/installation.md) for all installation methods.
 
 | Version | Features | Install |
 |---------|----------|---------|
-| **v2.9.0** (current) | Clawd CLI support | `claude plugins install OthmanAdi/planning-with-files` |
+| **v2.10.0** (current) | Kiro steering files support | `claude plugins install OthmanAdi/planning-with-files` |
+| **v2.9.0** | Clawd CLI support | See [releases](https://github.com/OthmanAdi/planning-with-files/releases) |
 | **v2.8.0** | Continue IDE support, POSIX sh compatibility fix | See [releases](https://github.com/OthmanAdi/planning-with-files/releases) |
 | **v2.7.1** | Dynamic Python detection fix | See [releases](https://github.com/OthmanAdi/planning-with-files/releases) |
 | **v2.7.0** | Gemini CLI support | See [releases](https://github.com/OthmanAdi/planning-with-files/releases) |

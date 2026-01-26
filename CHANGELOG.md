@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.10.0] - 2026-01-26
+
+### Added
+
+- **Kiro Support** (Issue #55 by @453783374)
+  - Native Kiro steering files integration
+  - Created `.kiro/steering/` with planning workflow, rules, and templates
+  - Added helper scripts in `.kiro/scripts/`
+  - Added `docs/kiro.md` installation guide
+  - Added Kiro badge to README
+
+### Note
+
+Kiro uses **Steering Files** (`.kiro/steering/*.md`) instead of the standard `SKILL.md` format. The steering files are automatically loaded by Kiro in every interaction.
+
+---
+
 ## [2.9.0] - 2026-01-26
 
 ### Added
